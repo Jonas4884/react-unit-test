@@ -46,7 +46,6 @@ describe('ListItem', () => {
         expect(node.children).toHaveLength(1);
     });
     
-<<<<<<< HEAD
     it('callback is called', () => {
         const onCheck = jest.fn()
         const callBack = (event, item, i) => onCheck(event, item, i) ;
@@ -74,13 +73,7 @@ describe('ListItem', () => {
         expect(node.children).toHaveLength(1);
 
     });
-=======
-    //TODO: implement this
-    it('callback is called', () => {});
 
-    //TODO: implement this
-    it('callback is not called when not checkable', () => {});
->>>>>>> main
 
     //TODO: implement this
     it('matches saved snapshot', () => {
