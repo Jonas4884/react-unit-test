@@ -76,6 +76,18 @@ describe('ListItem', () => {
 
 
     //TODO: implement this
+
+    it('matches no checkable snapshot', () => {
+        const tree = render(
+            <ListItem
+                id='list-item-test'
+                checkable={false}
+                onCheck={mockOnCheck}
+                
+            />
+        );
+        expect(tree).toMatchSnapshot();
+    });
     it('matches saved snapshot', () => {
         const tree = render(
             <ListItem
