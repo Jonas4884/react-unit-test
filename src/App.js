@@ -8,7 +8,10 @@ function App() {
     let [done, setDone] = useState([]);
     let [newItem, setNewItem] = useState(null);
 
-    const onChange = event => setNewItem(event.target.value);
+    const onChange = event => {
+        setNewItem(event.target.value)
+        
+    };
     const onKeyUp = event => {
         const { code } = event;
         if (code !== 'Enter') {
@@ -26,6 +29,7 @@ function App() {
     return (
         <div className="App">
             <List
+                idTodo={"todo-task"}
                 items={todo}
                 checkable
                 onCheck={(event, currentItem, i) => {
@@ -38,7 +42,9 @@ function App() {
             >
                 <Input onChange={onChange} onKeyUp={onKeyUp} />
             </List>
-            <List items={done} />
+            <List
+                idTodo={"done-task"}
+            items={done} />
         </div>
     );
 }

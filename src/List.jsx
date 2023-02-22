@@ -1,10 +1,10 @@
 import { ListItem } from "./ListItem";
 
 export function List(props) {
-    const {items, checkable, onCheck, children} = props;
+    const {items, checkable, onCheck, children,idTodo} = props;
 
     return (
-        <div className='list-container'>
+        <div className='list-container' id={idTodo}>
             <div className='list-children'>{children}</div>
             <ul className='list'>
                 {items.map((item, i) => {
