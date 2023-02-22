@@ -75,8 +75,6 @@ describe('ListItem', () => {
     });
 
 
-    //TODO: implement this
-
     it('matches no checkable snapshot', () => {
         const tree = render(
             <ListItem
