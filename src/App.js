@@ -29,7 +29,7 @@ function App() {
     return (
         <div className="App">
             <List
-                idTodo={"todo-task"}
+               
                 items={todo}
                 checkable
                 onCheck={(event, currentItem, i) => {
@@ -43,7 +43,7 @@ function App() {
                 <Input onChange={onChange} onKeyUp={onKeyUp} />
             </List>
             <List
-                idTodo={"done-task"}
+        
             items={done} />
         </div>
     );
